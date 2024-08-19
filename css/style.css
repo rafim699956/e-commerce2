@@ -15,6 +15,7 @@
     --whiteAlpha500: rgba(255, 255, 255, 0.5);
     --secondary: #F5F5F5;
     --red: #DB4444;
+    --green: #00FF66;
     --bs-secondary-rgb: 0, 0, 0;
     --bs-border-color: rgba(0, 0, 0, 0.3);
     --bs-border-width: 0.5px;
@@ -116,6 +117,21 @@ img {
     border: 0.5px var(--bs-border-style) var(--bs-border-color) !important;
 }
 
+.btn-primary {
+    padding: 16px var(--space-48);
+    --bs-btn-bg: var(--red);
+    border: none;
+    border-radius: 4px;
+    color: var(--whiteAlpha900);
+    font-size: var(--font-size-16);
+    font-weight: 500;
+    transition: all linear .3s;
+
+    &:hover {
+        --bs-btn-hover-bg: var(--blackAlpha900);
+    }
+}
+
 
 /* custom css end */
 
@@ -175,8 +191,6 @@ header {
 /* navigation part start */
 
 .navigation_bar {
-    margin-bottom: var(--space-5);
-
     .navbar {
         .navbar-brand {
             font-size: var(--font-size-24);
@@ -278,6 +292,7 @@ header {
 
 .hero_section {
     padding-bottom: 140px;
+    padding-top: 5px;
 
     aside {
         padding-top: var(--space-40);
@@ -475,29 +490,40 @@ main {
         height: 46px;
         border-radius: 50%;
         background: var(--secondary);
+        border: none;
+        transition: all linear .3s;
+
+        &:hover {
+            background: var(--blackAlpha900);
+
+            i {
+                color: var(--whiteAlpha900);
+            }
+        }
 
         i {
             font-size: var(--font-size-16);
+            transition: all linear .3s;
         }
     }
 }
 
 .product_card {
-    margin-top: var(--space-40);
+    padding-top: var(--space-40);
+    padding-bottom: 80px;
+}
 
-    .card {
-        padding: var(--space-35) var(--space-40);
-        background: var(--secondary) no-repeat center/cover;
-        min-height: 250px;
-        cursor: pointer;
+.card {
+    padding: var(--space-35) var(--space-40);
+    background: var(--secondary) no-repeat center/cover;
+    min-height: 250px;
+    cursor: pointer;
 
-        &:hover {
-            .add_to_cart {
-                display: block;
-                height: 41px;
-            }
+    &:hover {
+        .add_to_cart {
+            display: block;
+            height: 41px;
         }
-
     }
 }
 
@@ -511,6 +537,12 @@ main {
         background: var(--red);
         color: var(--whiteAlpha900);
         font-size: var(--font-size-12);
+        transition: all linear .3s;
+
+        &:hover {
+            background: var(--blackAlpha900);
+            color: var(--whiteAlpha900);
+        }
     }
 }
 
@@ -522,10 +554,20 @@ main {
         width: 34px;
         height: 34px;
         background: var(--whiteAlpha900);
+        transition: all linear .3s;
+
+        &:hover {
+            background: var(--blackAlpha900);
+
+            i {
+                color: var(--whiteAlpha900);
+            }
+        }
 
         i {
             font-size: var(--font-size-16);
             color: var(--blackAlpha900);
+            transition: all linear .3s;
         }
     }
 }
@@ -579,23 +621,9 @@ main {
 .view_product {
     margin-top: 66px;
     margin-bottom: 60px;
-
-    a {
-        background: var(--red);
-        color: var(--whiteAlpha900);
-        font-size: var(--font-size-16);
-        transition: all linear .3s;
-
-        &:hover {
-            background: var(--blackAlpha900);
-            color: var(--whiteAlpha900);
-        }
-    }
 }
 
 .drivider {
-    margin-bottom: 80px;
-
     hr {
         height: 0.5px;
         color: rgba(0, 0, 0, 0.3);
@@ -605,11 +633,12 @@ main {
 /* product part end */
 /* category part start */
 .category_wrapper {
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 70px;
 
     .category_item {
         border: 1px solid rgba(0, 0, 0, 0.3);
-        padding: var(--space-24) 57px;
+        padding: var(--space-24);
         cursor: pointer;
         transition: all linear .3s;
 
@@ -619,6 +648,14 @@ main {
             p {
                 color: var(--whiteAlpha900);
             }
+
+            i {
+                color: var(--whiteAlpha900);
+            }
+
+            svg {
+                color: var(--whiteAlpha900);
+            }
         }
 
         p {
@@ -626,7 +663,165 @@ main {
             color: var(--blackAlpha900);
             transition: all linear .3s;
         }
+
+        i {
+            font-size: 56px;
+            transition: all linear .3s;
+        }
+
+        svg {
+            width: 56px;
+            height: 56px;
+            transition: all linear .3s;
+        }
     }
 }
 
 /* category part end */
+/* best selling product part start */
+.best_selling_product {
+    padding-top: 70px;
+    padding-bottom: 140px;
+
+    .selling_product {
+        padding-top: 60px;
+    }
+}
+
+/* best selling product part end */
+/* category part start */
+.categori {
+    padding-bottom: 71px;
+
+    .categori_banner {
+        background: var(--blackAlpha900) no-repeat center/cover;
+        padding: 37px 44px 43px 56px;
+
+        .categori_left {
+            padding-top: 32px;
+            padding-bottom: 26px;
+
+            >p {
+                font-size: var(--font-size-16);
+                line-height: 20px;
+                color: var(--green);
+            }
+
+            h2 {
+                font-size: var(--font-size-48);
+                line-height: 60px;
+            }
+
+            .counter {
+                gap: 24px;
+                margin-bottom: 40px;
+
+                .counter_item {
+                    width: 62px;
+                    height: 62px;
+                    padding: 14px 7px;
+                    background: var(--whiteAlpha900);
+
+                    span {
+                        font-size: var(--font-size-16);
+                        line-height: 20px;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    p {
+                        font-size: 11px;
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            .btn-primary {
+                --bs-btn-bg: var(--green);
+
+                &:hover {
+                    --bs-btn-hover-bg: var(--red);
+                }
+            }
+        }
+
+        .categori_right {
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 500px;
+                height: 500px;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #D9D9D9;
+                opacity: 0.3;
+                filter: blur(100px);
+                z-index: -1;
+            }
+        }
+    }
+}
+
+/* category part end */
+/* explore part start */
+.explore_product {
+    .explore_product_wrapper {
+        padding-top: 60px;
+        padding-bottom: 140px;
+
+        .row {
+            --bs-gutter-y: 60px;
+        }
+
+        .discoun {
+            p {
+
+                background: var(--green);
+            }
+        }
+
+        .color_change {
+            .color_item {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: var(--blackAlpha900);
+                z-index: 9;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    border: 2px solid var(--whiteAlpha900);
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: var(--red);
+                    z-index: -1;
+                }
+
+                &:last-child {
+                    width: 20px;
+                    height: 20px;
+                    background: var(--red);
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* explore part end */
