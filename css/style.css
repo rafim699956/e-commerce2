@@ -132,6 +132,10 @@ img {
     }
 }
 
+.btn:active {
+    border: none;
+}
+
 
 /* custom css end */
 
@@ -257,6 +261,11 @@ header {
             }
 
             button {
+                width: 24px;
+                height: 24px;
+                top: 50%;
+                bottom: 50%;
+                transform: translateY(-50%);
                 right: var(--space-12);
 
                 .search-icon {
@@ -952,7 +961,7 @@ main {
     .footer_wrapper {
         gap: 2rem;
         padding-bottom: 60px;
-        grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
 
         .footer_item {
             h2 {
@@ -1017,6 +1026,82 @@ main {
         }
     }
 }
+
+/* sign up page style start*/
+.sign_up {
+    padding: 60px 0 140px;
+
+    .sign_up_wrapper {}
+
+    .sign_up_bg {
+        background: #CBE4E8 no-repeat center/cover;
+        width: calc(55.90%);
+    }
+
+    .account {
+        width: calc(44.10%);
+
+        h1 {
+            font-size: var(--font-size-36);
+            line-height: 30px;
+            letter-spacing: 4%;
+        }
+
+        p {
+            font-size: var(--font-size-16);
+            line-height: var(--line-height-24);
+        }
+
+        form {
+            >div {
+                margin-bottom: 40px;
+
+                input {
+                    &::placeholder {
+                        font-size: var(--font-size-16);
+                        font-weight: 400;
+                        line-height: var(--line-height-24);
+                        color: rgba(0, 0, 0, 0.4);
+                    }
+
+                    &:focus {
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+            margin-bottom: 2rem;
+
+            span {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-24);
+                color: var(--blackAlpha900);
+            }
+        }
+
+        .log_in {
+            span {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-24);
+                color: rgba(0, 0, 0, 0.7);
+            }
+
+            a {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-24);
+                color: rgba(0, 0, 0, 0.7);
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* sign up page style end*/
+
 
 /* footer part end */
 /* responsive css start */
