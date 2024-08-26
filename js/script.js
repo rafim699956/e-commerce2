@@ -7,6 +7,28 @@ function coundown(endDate, containerEl) {
     const _day = _hour * 24;
     let timer;
 
+    let str = new String('sdlkfsdlf');
+    let str2 = [
+        0, 1, 2
+    ]
+
+
+
+
+
+
+
+
+    console.log(
+        
+
+
+
+
+
+
+        str    );
+
     function showRemaining() {
         const now = new Date();
         const distance = end - now;
