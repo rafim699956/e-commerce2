@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cart | e-commerce</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- header part start -->
+    <header class="bg-secondary pt-2 position-sticky start-0 w-100 top-0">
+        <div class="container">
+            <div class="header py-1 d-flex align-items-center justify-content-end">
+                <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a class="ms-2 fw-semibold"
+                        href="#">ShopNow</a></p>
+                <div class="select_box ms-auto ps-3 pb-2">
+                    <select class="form-select bg-transparent d-flex align-items-center"
+                        aria-label="Default select example">
+                        <option selected>English</option>
+                        <option value="1">Bangla</option>
+                        <option value="2">Arbi</option>
+                        <option value="3">Turkis</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="navigation_bar pb-3 pt-4 border-bottom">
+            <nav class="navbar navbar-expand-lg pt-0 pt-lg-3 pb-0">
+                <div class="container">
+                    <a class="navbar-brand fw-bold m-0 p-0" href="index.html">Exclusive</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link fw-normal p-0" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-normal p-0" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-normal p-0" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-normal p-0" href="sign-up.html">Sign Up</a>
+                            </li>
+                        </ul>
+                        <form class="position-relative d-inline-block" role="search">
+                            <input class="form-control w-100" type="search" placeholder="What are you looking for?"
+                                aria-label="Search">
+                            <button
+                                class="btn search_btn p-0 d-inline-flex align-items-center justify-content-center position-absolute top-50 bottom-50"
+                                type="submit"><i class="search-icon fas fa-search"></i></button>
+                        </form>
+                        <div class="d-none">
+                            <div class="shoping d-inline-flex align-items-center gap-3">
+                                <button
+                                    class="btn rounded-circle p-0 d-inline-flex align-items-center justify-content-center"
+                                    type="button">
+                                    <i class="far fa-heart"></i>
+                                </button><button
+                                    class="btn rounded-circle p-0 d-inline-flex align-items-center justify-content-center"
+                                    type="button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button><button
+                                    class="btn rounded-circle p-0 d-inline-flex align-items-center justify-content-center"
+                                    type="button">
+                                    <i class="far fa-user"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header part end -->
+    <!-- cart part start -->
+    <section class="cart_section">
+        <div class="container">
+            <div class="cart fw-normal d-flex align-items-center">
+                <span>Home</span> <span>/</span>
+                <p>Cart</p>
+            </div>
+            <div class="cart_wrapper">
+                <div class="cart_items_row header w-100 rounded-1 d-grid align-items-center">
+                    <h5>Product</h5>
+                    <h5>Price</h5>
+                    <h5>Quantity</h5>
+                    <h5>Subtotal</h5>
+                </div>
+                <div class="cart_items_row w-100 rounded-1 d-grid align-items-center">
+                    <div class="cart_items_product d-inline-flex align-items-center">
+                        <div><img src="./images/Monitor-Cart-Small-2x.png" alt=""></div>
+                        <h5 class="text-start">LCD Monitor</h5>
+                    </div>
+                    <span>$650</span>
+                    <div class="numbar_of_item">
+                        <input class="mw-100 rounded-1" type="number" value="1">
+                    </div>
+                    <span>$650</span>
+                </div>
+                <div class="cart_items_row w-100 rounded-1 d-grid align-items-center">
+                    <div class="cart_items_product d-inline-flex align-items-center">
+                        <div><img src="./images/Gamepad-Cart-Small-2x.png" alt=""></div>
+                        <h5 class="text-start">H1 Gamepad</h5>
+                    </div>
+                    <span>$550</span>
+                    <div class="numbar_of_item">
+                        <input class="mw-100 rounded-1" type="number" value="2">
+                    </div>
+                    <span>$1100</span>
+                </div>
+                <div class="cart_btn d-inline-flex flex-wrap gap-3 w-100 align-items-center justify-content-between">
+                    <a class="btn py-3 px-5 fw-medium" href="#">Return To Shop</a>
+                    <a class="btn py-3 px-5 fw-medium" href="#">Update Cart</a>
+                </div>
+            </div>
+            <div class="total_cost d-flex flex-wrap gap-4 align-items-center justify-content-between">
+                <div class="coupon">
+                    <form class="d-inline-flex flex-wrap align-items-center gap-3" action="" method="post">
+                        <input class="py-3 px-4 rounded-1" type="text" placeholder="Coupon Code">
+                        <input class="btn btn-primary" type="submit" value="Apply Coupon">
+                    </form>
+                </div>
+                <div class="total_amount px-4 rounded-1">
+                    <h3 class="mb-4 fw-medium">Cart Total</h3>
+                    <div class="total_amount_item mb-3 d-flex gap-2 align-items-center justify-content-between">
+                        <h5 class="fw-normal">Subtotal:</h5><span class="fw-normal">$1750</span>
+                    </div>
+                    <hr class="m-0 mb-3">
+                    <div class="total_amount_item mb-3 d-flex gap-2 align-items-center justify-content-between">
+                        <h5 class="fw-normal">Shipping:</h5><span class="fw-normal">Free</span>
+                    </div>
+                    <hr class="m-0 mb-3">
+                    <div class="total_amount_item mb-3 d-flex gap-2 align-items-center justify-content-between">
+                        <h5 class="fw-normal">Total:</h5><span class="fw-normal">$1750</span>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn btn-primary" href="checkout.html">Procees to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cart part end -->
+
+
+    <!-- footer part start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper text-white d-grid">
+                <div class="footer_item">
+                    <h2 class="fw-bold mb-3">Exclusive</h2>
+                    <h4 class="fw-medium mt-2 mb-3">Subscribe</h4>
+                    <p class="fw-normal mt-2 mb-3">Get 10% off your first order</p>
+                    <form class="position-relative" action="" method="post">
+                        <input class="rounded-1 w-100" type="email" placeholder="Enter your email">
+                        <button
+                            class="position-absolute p-0 border-0  d-inline-flex align-items-center justify-content-center"
+                            type="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.91199 11.9998H3.99999L2.02299 4.1348C2.01033 4.0891 2.00262 4.04216 1.99999 3.9948C1.97799 3.2738 2.77199 2.7738 3.45999 3.1038L22 11.9998L3.45999 20.8958C2.77999 21.2228 1.99599 20.7368 1.99999 20.0288C2.00201 19.9655 2.01313 19.9029 2.03299 19.8428L3.49999 14.9998"
+                                    stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="footer_item">
+                    <h4 class="fw-medium mb-3">Subscribe</h4>
+                    <p class="fw-normal mt-2 mb-3">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">exclusive@gmail.com</a>
+                    <a class="fw-normal" href="tell:+88015-88888-9999">+88015-88888-9999</a>
+                </div>
+                <div class="footer_item">
+                    <h4 class="fw-medium mb-3">Subscribe</h4>
+                    <a class="d-block fw-normal mt-2 mb-3" href="mailto:exclusive@gmail.com">My Account</a>
+                    <div class="mb-3  ">
+                        <a href="#">Login</a><span> / </span><a href="#">Register</a>
+                    </div>
+                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">Cart</a>
+                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">Wishlist</a>
+                    <a class="d-block fw-normal" href="mailto:exclusive@gmail.com">Shop</a>
+                </div>
+                <div class="footer_item">
+                    <h4 class="fw-medium mb-3">Quick Link</h4>
+                    <a class="d-block fw-normal mt-2 mb-3" href="mailto:exclusive@gmail.com">Privacy Policy</a>
+                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">Terms Of Use</a>
+                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">FAQ</a>
+                    <a class="d-block fw-normal" href="mailto:exclusive@gmail.com">Contact</a>
+                </div>
+                <div class="footer_item">
+                    <h4 class="fw-medium mb-3">Download App</h4>
+                    <span class="fw-medium d-block mt-2 mb-2">Save $3 with App New User Only</span>
+                    <div class="d-flex gap-2">
+                        <div class="qr_code">
+                            <img src="./images/Qrcode 1.png" alt="">
+                        </div>
+                        <div class="app d-flex flex-column gap-2">
+                            <a href="#">
+                                <img src="./images/googleapp.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/appleapp.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_social_icon mt-4 d-flex align-items-center gap-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
+                                class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a
+                            href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="drivider">
+            <hr class="m-0">
+        </div>
+    </footer>
+    <!-- footer part end -->
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>

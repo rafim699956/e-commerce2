@@ -1,0 +1,85 @@
+.breadcrumb_section {
+    padding: 80px 0;
+}
+
+.breadcrumb {
+    a {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 12px;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 12px;
+}
+
+.breadcrumb-item {
+    &.active {
+        color: #000;
+        line-height: 24px;
+    }
+}
+
+.billing_heading {
+    h1 {
+        font-size: 2.25rem;
+        line-height: 30px;
+        letter-spacing: 4px;
+    }
+}
+
+.billing_wrapper {
+    grid-column-gap: 10.813rem;
+    grid-column-gap: min(10.813rem, 15vw);
+    grid-row-gap: 4rem;
+}
+
+.form_item {
+    width: min(29.375rem, 100vw);
+}
+
+.billing_details {
+    padding-bottom: min(8.75rem, 20vw);
+}
+
+.purches_product {
+    max-width: 26.375rem;
+
+    .product_item {
+        img {
+            width: 3.375rem !important;
+            aspect-ratio: 1 / 1;
+        }
+
+        h4,
+        span,
+        +span {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+.payment_option {
+    img {
+        width: 2.375rem !important;
+    }
+}
+
+.checkout_product {
+    width: min(32.938rem, 100vw);
+}
+
+.coupon {
+    input {
+        width: min(18.75rem, 100vw);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
