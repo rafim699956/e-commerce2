@@ -1,0 +1,43 @@
+.account_heading {
+    margin-bottom: 5rem;
+}
+
+.box-shadow {
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+}
+
+.contact_info {
+    padding: 2.5rem 2.188rem 3.125rem;
+}
+
+.contact_number {
+    h5 {
+        font-size: var(--font-size-16);
+        line-height: var(--line-height-24);
+    }
+}
+
+.phone_icon {
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    background: var(--red);
+    color: var(--whiteAlpha900);
+
+    i {
+        font-size: 1.25rem;
+    }
+}
+
+.address {
+
+    p,
+    a {
+        font-size: var(--font-size-14);
+        line-height: var(--line-height-21);
+        color: var(--blackAlpha900);
+    }
+}
+
+.contact_form {
+    padding: 2.5rem 2rem;
+}
