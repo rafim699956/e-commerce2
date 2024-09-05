@@ -1,6 +1,11 @@
-.change_product {
+img {
+    object-fit: cover;
+}
+
+.selected_item {
     max-width: 10.625rem;
     width: 100%;
+
 }
 
 .account_heading {
