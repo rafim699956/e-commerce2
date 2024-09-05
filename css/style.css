@@ -122,7 +122,8 @@ a {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1194px;
+        max-width: 1170px;
+        padding: 0;
     }
 }
 
@@ -847,7 +848,7 @@ header {
             &::before {
                 position: absolute;
                 content: "";
-                width: 500px;
+                max-width: 500px;
                 height: 500px;
                 border-radius: 50%;
                 top: 50%;
@@ -926,14 +927,11 @@ header {
 /* explore part end */
 /* new arrival part start */
 .arrival_wrapper {
-    padding-top: 60px;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.875rem;
-    grid-template-areas: "l l l l l l r r r r r r"
-        "l l l l l l rl rl rl rr rr rr";
+    padding-top: 36px;
 
-    &>div {
-        background: var(--blackAlpha900) no-repeat center/cover;
+    &.g-5,
+    .gy-5 {
+        --bs-gutter-y: 1.875rem;
     }
 
     .arrival_content {
@@ -984,22 +982,13 @@ header {
         }
     }
 
+    .arrival_item {
+        background: var(--blackAlpha900);
+        height: 100%;
+    }
+
     .arrival_item1 {
-        grid-area: l;
         padding: 90px 30px 0;
-    }
-
-    .arrival_item2 {
-        background: #0D0D0D;
-        grid-area: r;
-    }
-
-    .arrival_item3 {
-        grid-area: rl;
-    }
-
-    .arrival_item4 {
-        grid-area: rr;
     }
 }
 
@@ -1325,6 +1314,24 @@ header {
 
 /* footer part end */
 /* responsive css start */
+@media only screen and (min-width:991px) {
+    .sign_up_wrapper {
+        .sign_up_bg {
+            /* width: calc(55.90%); */
+        }
+
+        .content {
+            width: calc(44.10%);
+            padding-left: 129px;
+            padding-right: 50px;
+
+            .account {
+                max-width: 380px;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width:769px) {
     aside {
         display: block !important;
@@ -1533,35 +1540,7 @@ header {
     .delivery {
         padding: 0px 0 40px;
     }
-
-    .arrival_wrapper {
-        grid-template-areas:
-            "l l l l l l l  l  l  l  l  l "
-            "r r r r r r r r r r r r"
-            "rl rl rl rl rl rl rl rl rl rl rl rl"
-            "rr rr rr rr rr rr rr rr rr rr rr rr";
-    }
-
 }
 
-@media only screen and (min-width:991px) {
-    .sign_up_wrapper {
-        .sign_up_bg {
-            /* width: calc(55.90%); */
-        }
-
-        .content {
-            width: calc(44.10%);
-            padding-left: 129px;
-            padding-right: 50px;
-
-            .account {
-                max-width: 380px;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width:769px) and (max-width:991px) {}
 
 /* responsive css end */
