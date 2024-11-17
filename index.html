@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>e-commerce-website</title>
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -13,12 +14,12 @@
 
 <body>
     <!-- header part start -->
-    <header class="bg-secondary pt-2 position-sticky start-0 w-100 top-0">
-        <div class="container px-lg-0">
-            <div class="header py-1 d-flex align-items-center justify-content-end">
-                <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a class="ms-2 fw-semibold"
-                        href="#">ShopNow</a></p>
-                <div class="select_box ms-auto ps-3 pb-2">
+    <header class="bg-secondary position-sticky start-0 w-100 top-0">
+        <div class="container">
+            <div class="header d-flex align-items-center justify-content-center position-relative">
+                <p class="mb-0">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a
+                        class="ms-2 fw-semibold" href="#">ShopNow</a></p>
+                <div class="select_box position-absolute end-0">
                     <select class="form-select bg-transparent" aria-label="Default select example">
                         <option selected>English</option>
                         <option value="1">Bangla</option>
@@ -28,8 +29,8 @@
                 </div>
             </div>
         </div>
-        <div class="navigation_bar pb-3 pt-4 border-bottom">
-            <nav class="navbar navbar-expand-lg pt-0 pt-lg-3 pb-0">
+        <div class="navigation_bar border-bottom">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container position-relative">
                     <a class="navbar-brand fw-bold m-0 p-0" href="index.html">Exclusive</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -152,15 +153,13 @@
 
     <!-- hero part start -->
     <section class="hero_section">
-        <div class="container px-lg-0">
+        <div class="container position-relative">
+            <button class="aside-button position-absolute d-lg-none" onclick="showHide()">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
             <div class="wrapper d-flex position-relative">
-                <button class="btn collapse_btn_aside position-absolute top-0 start-0 d-none" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#asideBarCollapse" aria-expanded="false"
-                    aria-controls="asideBarCollapse">
-                    <i class="fas fa-sliders-h"></i>
-                </button>
-                <aside class="pe-3 border-0 border-lg-end collapse collapse-horizontal bg-white" id="asideBarCollapse">
-                    <ul class="nav flex-column">
+                <aside class="bg-white" id="showHide">
+                    <ul class="nav flex-column pe-3 position-relative">
                         <li class="nav-item mb-3 position-relative">
                             <a class="dropdown-toggle fw-normal d-flex align-items-center justify-content-between  nav-link p-0 active"
                                 aria-current="page" data-bs-toggle="dropdown" aria-expanded="false" href="#">Woman’s
@@ -218,7 +217,7 @@
                         </li>
                     </ul>
                 </aside>
-                <div class="main_content flex-grow-1">
+                <div class="main_content">
                     <div class="slider_img">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators m-0 gap-1">
@@ -294,15 +293,14 @@
     </section>
     <!-- hero part end -->
     <!-- product part start -->
-    <section class="product">
-        <div class="container px-lg-0">
+    <section class="product overflow-hidden">
+        <div class="container">
             <div class="common">
-                <div class="days mb-3 d-flex align-items-center gap-3">
+                <div class="days d-flex align-items-center">
                     <span></span>
                     <span class="fw-semibold">Today’s</span>
                 </div>
-                <div
-                    class="product_title_wrapper mt-2 d-flex flex-wrap gap-3 align-items-center justify-content-between">
+                <div class="product_title_wrapper d-flex flex-wrap gap-3 align-items-center justify-content-between">
                     <div class="product_title_left d-inline-flex flex-wrap gap-3 align-items-center">
                         <h2 class="fw-semibold">Flash Sales</h2>
                         <div class="counter text-end d-inline-flex align-items-center" id="flashSaleCounter">
@@ -331,8 +329,8 @@
                 </div>
             </div>
             <div class="product_card">
-                <div class="row gy-5 gx-3">
-                    <div class="col-sm-6 col-lg-3">
+                <div class="product_slider d-flex flex-nowrap align-items-center">
+                    <div class="slider-item">
                         <div
                             class="card d-flex align-items-center justify-content-center border-0 rounded-1 position-relative overflow-hidden">
                             <div class="card_img position-relative">
@@ -359,7 +357,6 @@
                                 Add To Cart
                             </button>
                         </div>
-
                         <div class="card-body mt-3">
                             <h5 class="card-title mb-2">HAVIT HV-G92 Gamepad</h5>
                             <div class="price_details mb-2 d-flex align-items-center">
@@ -373,7 +370,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="slider-item">
                         <div
                             class="card d-flex align-items-center justify-content-center border-0 rounded-1 position-relative overflow-hidden">
                             <div class="card_img position-relative">
@@ -413,7 +410,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="slider-item">
                         <div
                             class="card d-flex align-items-center justify-content-center border-0 rounded-1 position-relative overflow-hidden">
                             <div class="card_img position-relative">
@@ -453,7 +450,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="slider-item">
                         <div
                             class="card d-flex align-items-center justify-content-center border-0 rounded-1 position-relative overflow-hidden">
                             <div class="card_img position-relative">
@@ -493,15 +490,97 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="view_product d-flex align-items-center justify-content-center">
-                            <a href="#" class="btn btn-primary">View All Products</a>
+                    <div class="slider-item">
+                        <div
+                            class="card d-flex align-items-center justify-content-center border-0 rounded-1 position-relative overflow-hidden">
+                            <div class="card_img position-relative">
+                                <img class="img-fluid w-100" src="./images/product-4.png" alt="product1">
+                                <a href="product.html" class="position-absolute start-0 top-0 end-0 bottom-0"></a>
+                            </div>
+                            <div
+                                class="discoun d-inline-flex align-items-center justify-content-center position-absolute">
+                                <p class="py-1 fw-normal rounded-1">-25%</p>
+                            </div>
+                            <div
+                                class="wished_icon d-inline-flex flex-column gap-2 align-items-center position-absolute">
+                                <button
+                                    class="p-0 border-0 icons rounded-circle d-inline-flex align-items-center justify-content-center">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button
+                                    class="p-0 border-0 icons rounded-circle d-inline-flex align-items-center justify-content-center">
+                                    <i class="far fa-eye"></i>
+                                </button>
+                            </div>
+                            <button
+                                class="add_to_cart fw-medium p-0 border-0 d-inline-flex align-items-center justify-content-center z-3 position-absolute">
+                                Add To Cart
+                            </button>
+                        </div>
+                        <div class="card-body mt-3">
+                            <h5 class="card-title mb-2">S-Series Comfort Chair</h5>
+                            <div class="price_details mb-2 d-flex align-items-center">
+                                <span class="fw-medium me-2">$375</span>
+                                <span class="fw-medium me-1">$400</span>
+                            </div>
+                            <div class="review">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><span
+                                    class="ms-2 fw-semibold">(99)</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="drivider">
-                            <hr class="m-0">
+                    <div class="slider-item">
+                        <div
+                            class="card d-flex align-items-center justify-content-center border-0 rounded-1 position-relative overflow-hidden">
+                            <div class="card_img position-relative">
+                                <img class="img-fluid w-100" src="./images/product-4.png" alt="product1">
+                                <a href="product.html" class="position-absolute start-0 top-0 end-0 bottom-0"></a>
+                            </div>
+                            <div
+                                class="discoun d-inline-flex align-items-center justify-content-center position-absolute">
+                                <p class="py-1 fw-normal rounded-1">-25%</p>
+                            </div>
+                            <div
+                                class="wished_icon d-inline-flex flex-column gap-2 align-items-center position-absolute">
+                                <button
+                                    class="p-0 border-0 icons rounded-circle d-inline-flex align-items-center justify-content-center">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button
+                                    class="p-0 border-0 icons rounded-circle d-inline-flex align-items-center justify-content-center">
+                                    <i class="far fa-eye"></i>
+                                </button>
+                            </div>
+                            <button
+                                class="add_to_cart fw-medium p-0 border-0 d-inline-flex align-items-center justify-content-center z-3 position-absolute">
+                                Add To Cart
+                            </button>
                         </div>
+                        <div class="card-body mt-3">
+                            <h5 class="card-title mb-2">S-Series Comfort Chair</h5>
+                            <div class="price_details mb-2 d-flex align-items-center">
+                                <span class="fw-medium me-2">$375</span>
+                                <span class="fw-medium me-1">$400</span>
+                            </div>
+                            <div class="review">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><span
+                                    class="ms-2 fw-semibold">(99)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="view_product d-flex align-items-center justify-content-center">
+                        <a href="#" class="btn btn-primary">View All Products</a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="drivider">
+                        <hr class="m-0">
                     </div>
                 </div>
             </div>
@@ -510,13 +589,13 @@
     <!-- product part end -->
     <!-- category part start -->
     <section class="category">
-        <div class="container px-lg-0">
+        <div class="container">
             <div class="common">
-                <div class="days mb-3 d-flex align-items-center gap-3">
+                <div class="days d-flex align-items-center">
                     <span></span>
                     <span class="fw-semibold">Categories</span>
                 </div>
-                <div class="product_title_wrapper mt-2 d-flex align-items-center justify-content-between">
+                <div class="product_title_wrapper d-flex align-items-center justify-content-between">
                     <div class="product_title_left d-inline-flex align-items-center">
                         <h2 class="fw-semibold">Browse By Category</h2>
                     </div>
@@ -595,13 +674,13 @@
     <!-- category part end -->
     <!-- best selling part start -->
     <section class="best_selling_product">
-        <div class="container px-lg-0">
+        <div class="container">
             <div class="common">
-                <div class="days mb-3 d-flex align-items-center gap-3">
+                <div class="days d-flex align-items-center">
                     <span></span>
                     <span class="fw-semibold">This Month</span>
                 </div>
-                <div class="product_title_wrapper mt-2 d-flex align-items-center justify-content-between">
+                <div class="product_title_wrapper d-flex align-items-center justify-content-between">
                     <div class="product_title_left d-inline-flex align-items-center">
                         <h2 class="fw-semibold">Best Selling Products</h2>
                     </div>
@@ -611,7 +690,7 @@
                 </div>
             </div>
             <div class="selling_product">
-                <div class="row gx-3 py-5">
+                <div class="row gx-3">
                     <div class="col-6 col-lg-3">
                         <div
                             class="card d-flex align-items-center justify-content-center border-0 rounded-1 position-relative overflow-hidden">
@@ -762,12 +841,12 @@
     <!-- best selling part end -->
     <!-- categori part start -->
     <section class="categori">
-        <div class="container px-lg-0">
+        <div class="container">
             <div class="categori_banner d-flex align-items-center">
                 <div class="categori_left text-white">
-                    <p class="fw-semibold mb-2 mb-xl-3">Categories</p>
-                    <h2 class="my-2 my-lg-3 fw-semibold">Enhance Your Music Experience</h2>
-                    <div class="counter mt-2 mt-lg-3 text-end d-inline-flex align-items-center" id="counter2">
+                    <p class="fw-semibold">Categories</p>
+                    <h2 class="fw-semibold">Enhance Your Music Experience</h2>
+                    <div class="counter text-end d-flex align-items-center" id="counter2">
                         <div
                             class="counter_item rounded-circle d-inline-flex flex-column text-black align-items-center justify-content-center">
                             <span class="fw-semibold position-relative hour">23</span>
@@ -803,13 +882,13 @@
     <!-- categori part end -->
     <!-- Explore part start -->
     <section class="explore_product">
-        <div class="container px-lg-0">
+        <div class="container">
             <div class="common">
-                <div class="days mb-3 d-flex align-items-center gap-3">
+                <div class="days d-flex align-items-center">
                     <span></span>
                     <span class="fw-semibold">Our Product</span>
                 </div>
-                <div class="product_title_wrapper mt-2 d-flex align-items-center justify-content-between">
+                <div class="product_title_wrapper d-flex align-items-center justify-content-between">
                     <div class="product_title_left d-inline-flex align-items-center">
                         <h2 class="fw-semibold">Explore Our Products</h2>
                     </div>
@@ -1143,80 +1222,81 @@
     <!-- Explore part end -->
     <!-- new arrival part start -->
     <section class="new_arrival">
-        <div class="container px-lg-0">
+        <div class="container">
             <div class="common">
-                <div class="days mb-3 d-flex align-items-center gap-3">
+                <div class="days d-flex align-items-center">
                     <span></span>
                     <span class="fw-semibold">Featured</span>
                 </div>
-                <div class="product_title_wrapper mt-2 d-flex align-items-center justify-content-between">
+                <div class="product_title_wrapper d-flex align-items-center justify-content-between">
                     <div class="product_title_left d-inline-flex align-items-center">
                         <h2 class="fw-semibold">New Arrival</h2>
                     </div>
                 </div>
             </div>
-            <div class="row arrival_wrapper mx-0 g-4">
-                <div class="col-lg-6">
+            <!--  -->
+            <div class="arrival_wrapper d-flex flex-wrap flex-lg-nowrap">
+                <!-- item left start -->
+                <div
+                    class="position-relative arrival_item d-flex align-items-end justify-content-center p-4 pb-lg-0 pt-lg-0 rounded-1">
+                    <div><img class="img-fluid w-100" src="./images/arrival-1.png" alt=""></div>
+                    <div class="arrival_content position-absolute">
+                        <h4 class="fw-semibold mb-3">PlayStation 5</h4>
+                        <p class="fw-normal mb-3 pe-3 pe-sm-0">Black and White version of the PS5 coming out on
+                            sale.</p>
+                        <a class="fw-medium d-inline-block" href="#">Shop Now</a>
+                    </div>
+                </div>
+                <!-- item left end -->
+                <!-- item right start -->
+                <div class="arrival-right d-flex flex-column">
+                    <!-- right top star -->
                     <div
-                        class="position-relative arrival_item d-flex align-items-end justify-content-center p-4 pb-lg-0 pt-lg-0 rounded-1">
-                        <div><img class="img-fluid w-100" src="./images/arrival-1.png" alt=""></div>
+                        class="position-relative arrival_item2 arrival_item d-flex align-items-end justify-content-end p-4 pb-lg-0 pt-lg-0 rounded-1">
+                        <div><img class="img-fluid w-100" src="./images/frame-710.png" alt=""></div>
                         <div class="arrival_content position-absolute">
-                            <h4 class="fw-semibold mb-3">PlayStation 5</h4>
-                            <p class="fw-normal mb-3 pe-3 pe-sm-0">Black and White version of the PS5 coming out on
-                                sale.</p>
+                            <h4 class="fw-semibold mb-3">Women’s Collections</h4>
+                            <p class="fw-normal mb-3">Featured woman collections that give you another vibe.</p>
                             <a class="fw-medium d-inline-block" href="#">Shop Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row mx-0 g-4">
-                        <div class="col-lg-12 px-0">
-                            <div
-                                class="position-relative arrival_item2 arrival_item d-flex align-items-end justify-content-end p-4 pb-lg-0 pt-lg-0 rounded-1">
-                                <div><img class="img-fluid w-100" src="./images/frame-710.png" alt=""></div>
-                                <div class="arrival_content position-absolute">
-                                    <h4 class="fw-semibold mb-3">Women’s Collections</h4>
-                                    <p class="fw-normal mb-3">Featured woman collections that give you another vibe.</p>
-                                    <a class="fw-medium d-inline-block" href="#">Shop Now</a>
-                                </div>
+                    <!-- right top end -->
+
+                    <!-- right bottom star -->
+                    <div class="arrival-bottom d-inline-flex w-100">
+                        <!-- bottom left start -->
+                        <div
+                            class="position-relative arrival_item d-flex align-items-center justify-content-center p-4 rounded-1">
+                            <div><img class="img-fluid w-100" src="./images/frame-709.png" alt=""></div>
+                            <div class="arrival_content position-absolute">
+                                <h4 class="fw-semibold mb-2">Speakers</h4>
+                                <p class="fw-normal mb-2">Amazon wireless speakers</p>
+                                <a class="fw-medium d-inline-block" href="#">Shop Now</a>
                             </div>
                         </div>
-                        <div class="col-md-6 px-0 ps-md-0">
-                            <div
-                                class="position-relative arrival_item d-flex align-items-center justify-content-center p-4 rounded-1">
-                                <div><img class="img-fluid w-100" src="./images/frame-709.png" alt=""></div>
-                                <div class="arrival_content position-absolute">
-                                    <h4 class="fw-semibold mb-2">Speakers</h4>
-                                    <p class="fw-normal mb-2">Amazon wireless speakers</p>
-                                    <a class="fw-medium d-inline-block" href="#">Shop Now</a>
-                                </div>
+                        <!-- bottom left end-->
+                        <!-- bottom right start -->
+                        <div
+                            class="position-relative arrival_item d-flex align-items-center justify-content-center p-4 rounded-1">
+                            <div><img class="img-fluid w-100" src="./images/frame-708.png" alt=""></div>
+                            <div class="arrival_content position-absolute">
+                                <h4 class="fw-semibold mb-2">Perfume</h4>
+                                <p class="fw-normal mb-2">GUCCI INTENSE OUD EDP</p>
+                                <a class="fw-medium d-inline-block" href="#">Shop Now</a>
                             </div>
                         </div>
-                        <div class="col-md-6 px-0 pe-md-0">
-                            <div
-                                class="position-relative arrival_item d-flex align-items-center justify-content-center p-4 rounded-1">
-                                <div><img class="img-fluid w-100" src="./images/frame-708.png" alt=""></div>
-                                <div class="arrival_content position-absolute">
-                                    <h4 class="fw-semibold mb-2">Perfume</h4>
-                                    <p class="fw-normal mb-2">GUCCI INTENSE OUD EDP</p>
-                                    <a class="fw-medium d-inline-block" href="#">Shop Now</a>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- bottom right end -->
                     </div>
+                    <!-- right bottom end -->
                 </div>
+                <!-- item right end -->
             </div>
-            <!-- <div class="arrival_wrapper d-grid ">
-                                
-                
-                
-            </div> -->
         </div>
     </section>
     <!-- new arrival part end -->
     <!-- delivery part start -->
     <section class="delivery">
-        <div class="container px-lg-0">
+        <div class="container">
             <div class="row gx-3 gy-5">
                 <div class="col-6 col-lg-4">
                     <div class="delivery_item d-flex flex-column align-items-center justify-content-center">
@@ -1321,7 +1401,7 @@
     <!-- delivery part end -->
     <!-- footer part start -->
     <footer class="footer">
-        <div class="container px-lg-0">
+        <div class="container">
             <div class="footer_wrapper text-white d-grid">
                 <div class="footer_item">
                     <h2 class="fw-bold mb-3">Exclusive</h2>
@@ -1396,14 +1476,16 @@
     <!-- footer part end -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
 
-            coundown('10/21/2024 10:1 AM', 'flashSaleCounter')
-            coundown('10/21/2024 10:1 AM', 'counter2')
+            coundown('10/21/2030 10:1 AM', 'flashSaleCounter')
+            coundown('10/21/2030 10:1 AM', 'counter2')
 
-        })
+        });
     </script>
 </body>
 
