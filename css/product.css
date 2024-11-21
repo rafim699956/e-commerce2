@@ -165,7 +165,7 @@ img {
     label {
         width: 2rem;
         aspect-ratio: 1 / 1;
-        background: var(--whiteAlpha900);
+        background: var(--bs-gray-100Alpha900);
         font-size: var(--font-size-14);
         font-weight: 500;
         line-height: var(--line-height-21);

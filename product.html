@@ -7,18 +7,20 @@
     <title>product | e-commerce</title>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/product.css">
 </head>
 
 <body>
     <!-- header part start -->
-    <header class="bg-secondary pt-2 position-sticky start-0 w-100 top-0">
+    <header class="bg-black">
         <div class="container">
-            <div class="header py-1 d-flex align-items-center justify-content-end">
-                <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a class="ms-2 fw-semibold"
-                        href="#">ShopNow</a></p>
-                <div class="select_box ms-auto ps-3 pb-2">
+            <div
+                class="header d-flex gap-3 flex-column flex-lg-row align-items-center justify-content-center position-relative">
+                <p class="mb-0 text-center">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a
+                        class="ms-2 fw-semibold" href="#">ShopNow</a></p>
+                <div class="select_box end-0">
                     <select class="form-select bg-transparent" aria-label="Default select example">
                         <option selected>English</option>
                         <option value="1">Bangla</option>
@@ -28,8 +30,8 @@
                 </div>
             </div>
         </div>
-        <div class="navigation_bar pb-3 pt-4 border-bottom">
-            <nav class="navbar navbar-expand-lg pt-0 pt-lg-3 pb-0">
+        <div class="navigation_bar border-bottom">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container position-relative">
                     <a class="navbar-brand fw-bold m-0 p-0" href="index.html">Exclusive</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,16 +42,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link fw-normal p-0" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link fw-normal active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fw-normal p-0" href="#">Contact</a>
+                                <a class="nav-link fw-normal" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fw-normal p-0" href="#">About</a>
+                                <a class="nav-link fw-normal" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fw-normal p-0" href="sign-up.html">Sign Up</a>
+                                <a class="nav-link fw-normal" href="sign-up.html">Sign Up</a>
                             </li>
                         </ul>
                         <form class="position-relative nav_form d-inline-block" role="search">
@@ -59,11 +61,12 @@
                                 class="btn search_btn p-0 d-inline-flex align-items-center justify-content-center position-absolute top-50 bottom-50"
                                 type="submit"><i class="search-icon fas fa-search"></i></button>
                         </form>
-                        <div class="shoping d-inline-flex align-items-center gap-3">
+                        <div class="shoping d-none d-lg-inline-flex align-items-center gap-3">
                             <a href="wishlist.html"
                                 class="wished_btn btn rounded-circle position-relative p-0 d-inline-flex align-items-center justify-content-center">
                                 <i class="far fa-heart"></i>
-                            </a><a href="cart.html"
+                            </a>
+                            <a href="cart.html"
                                 class="btn rounded-circle p-0 d-inline-flex align-items-center justify-content-center">
                                 <i class="fas fa-shopping-cart"></i>
                             </a>
@@ -75,8 +78,9 @@
                                 </button>
                                 <ul class="dropdown-menu rounded-1 m-0 border-0">
                                     <li>
-                                        <a class="d-flex align-items-center gap-3" href="#"><svg width="32" height="32"
-                                                viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <a class="d-flex align-items-center gap-3" href="account.html">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M24 27V24.3333C24 22.9188 23.5224 21.5623 22.6722 20.5621C21.8221 19.5619 20.669 19 19.4667 19H11.5333C10.331 19 9.17795 19.5619 8.32778 20.5621C7.47762 21.5623 7 22.9188 7 24.3333V27"
                                                     stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
@@ -459,15 +463,15 @@
     <!-- related product part end  -->
 
     <!-- footer part start -->
-    <footer class="footer">
+    <footer class="footer bg-black">
         <div class="container">
             <div class="footer_wrapper text-white d-grid">
-                <div class="footer_item">
-                    <h2 class="fw-bold mb-3">Exclusive</h2>
-                    <h4 class="fw-medium mt-2 mb-3">Subscribe</h4>
-                    <p class="fw-normal mt-2 mb-3">Get 10% off your first order</p>
-                    <form class="position-relative" action="php." method="post">
-                        <input class="rounded-1 w-100" type="email" placeholder="Enter your email">
+                <div class="footer_item d-flex flex-column">
+                    <h2 class="fw-bold">Exclusive</h2>
+                    <h4 class="fw-medium mb-4">Subscribe</h4>
+                    <p class="">Get 10% off your first order</p>
+                    <form class="position-relative" action="" method="post">
+                        <input class="rounde d-1 w-100" type="email" placeholder="Enter your email">
                         <button
                             class="position-absolute p-0 border-0  d-inline-flex align-items-center justify-content-center"
                             type="submit">
@@ -481,42 +485,42 @@
                         </button>
                     </form>
                 </div>
-                <div class="footer_item">
-                    <h4 class="fw-medium mb-3">Subscribe</h4>
-                    <p class="fw-normal mt-2 mb-3">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
-                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">exclusive@gmail.com</a>
+                <div class="footer_item d-flex flex-column">
+                    <h4 class="fw-medium mb-4">Subscribe</h4>
+                    <p class="fw-normal">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <a class="" href="mailto:exclusive@gmail.com">exclusive@gmail.com</a>
                     <a class="fw-normal" href="tell:+88015-88888-9999">+88015-88888-9999</a>
                 </div>
-                <div class="footer_item">
-                    <h4 class="fw-medium mb-3">Subscribe</h4>
-                    <a class="d-block fw-normal mt-2 mb-3" href="mailto:exclusive@gmail.com">My Account</a>
+                <div class="footer_item d-flex flex-column">
+                    <h4 class="fw-medium mb-4">Subscribe</h4>
+                    <a class="" href="mailto:exclusive@gmail.com">My Account</a>
                     <div class="mb-3  ">
                         <a href="#">Login</a><span> / </span><a href="#">Register</a>
                     </div>
-                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">Cart</a>
-                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">Wishlist</a>
-                    <a class="d-block fw-normal" href="mailto:exclusive@gmail.com">Shop</a>
+                    <a class="" href="mailto:exclusive@gmail.com">Cart</a>
+                    <a class="" href="mailto:exclusive@gmail.com">Wishlist</a>
+                    <a class="" href="mailto:exclusive@gmail.com">Shop</a>
                 </div>
-                <div class="footer_item">
-                    <h4 class="fw-medium mb-3">Quick Link</h4>
-                    <a class="d-block fw-normal mt-2 mb-3" href="mailto:exclusive@gmail.com">Privacy Policy</a>
-                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">Terms Of Use</a>
-                    <a class="d-block fw-normal mb-3" href="mailto:exclusive@gmail.com">FAQ</a>
-                    <a class="d-block fw-normal" href="mailto:exclusive@gmail.com">Contact</a>
+                <div class="footer_item d-flex flex-column">
+                    <h4 class="fw-medium mb-4">Quick Link</h4>
+                    <a class="" href="mailto:exclusive@gmail.com">Privacy Policy</a>
+                    <a class="" href="mailto:exclusive@gmail.com">Terms Of Use</a>
+                    <a class="" href="mailto:exclusive@gmail.com">FAQ</a>
+                    <a class="" href="mailto:exclusive@gmail.com">Contact</a>
                 </div>
-                <div class="footer_item">
+                <div class="footer_item d-flex flex-column">
                     <h4 class="fw-medium mb-3">Download App</h4>
-                    <span class="fw-medium d-block mt-2 mb-2">Save $3 with App New User Only</span>
+                    <span class="fw-medium mb-2">Save $3 with App New User Only</span>
                     <div class="d-flex gap-2">
                         <div class="qr_code">
-                            <img src="./images/Qrcode 1.png" alt="images">
+                            <img src="./images/Qrcode 1.png" alt="">
                         </div>
                         <div class="app d-flex flex-column gap-2">
                             <a href="#">
-                                <img src="./images/googleapp.png" alt="images">
+                                <img src="./images/googleapp.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="./images/appleapp.png" alt="images">
+                                <img src="./images/appleapp.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -528,8 +532,14 @@
                 </div>
             </div>
         </div>
-        <div class="drivider">
-            <hr class="m-0">
+        <section class="drivider">
+            <div class="drivider-border"></div>
+        </section>
+        <div class="container">
+            <div class="copyright d-flex align-items-center justify-content-center">
+                <span>&#169;</span>
+                <p class="mb-0">Copyright Rimel 2022. All right reserved</p>
+            </div>
         </div>
     </footer>
     <!-- footer part end -->

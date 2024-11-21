@@ -47,13 +47,9 @@ img {
 .monthly_report {
     padding-bottom: 8.75rem;
 }
-
-.report_wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
-    gap: 1.875rem;
-}
-
 .report_item {
+    text-align: center;
+    height: 100%;
     padding: 1.875rem .25rem;
     transition: all linear .3s;
 }

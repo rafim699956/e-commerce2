@@ -21,7 +21,7 @@
     width: 2.5rem;
     aspect-ratio: 1/1;
     background: var(--red);
-    color: var(--whiteAlpha900);
+    color: var(--bs-gray-100Alpha900);
 
     i {
         font-size: 1.25rem;
