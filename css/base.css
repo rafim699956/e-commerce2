@@ -20,9 +20,12 @@
    --bs-light: #D9D9D9;
    --bs-black: #000000;
    --bs-link-color-rgb: var(--bs-gray-100);
+   --bs-link-hover-color-rgb: var(--bs-primary);
+   
+   --blackAlpha500: rgba(0, 0, 0, 0.5);
 
    /* color */
-   --blackAlpha500: rgba(0, 0, 0, 0.5);
+
    --bs-gray-100Alpha500: rgba(255, 255, 255, 0.5);
    --bs-secondary-rgb: 0, 0, 0;
    --bs-border-color: var(--black-300);
@@ -155,7 +158,6 @@
    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
    --bs-body-font-size: 1rem;
    --bs-body-font-weight: 400;
-   --bs-body-color: #212529;
    --bs-body-color-rgb: 33, 37, 41;
    --bs-body-bg: #fff;
    --bs-body-bg-rgb: 255, 255, 255;
@@ -170,11 +172,10 @@
    --bs-tertiary-bg: #f8f9fa;
    --bs-tertiary-bg-rgb: 248, 249, 250;
    --bs-heading-color: inherit;
-   --bs-link-color: #0d6efd;
    
    --bs-link-decoration: underline;
    --bs-link-hover-color: #0a58ca;
-   --bs-link-hover-color-rgb: 10, 88, 202;
+   
    --bs-code-color: #d63384;
    --bs-highlight-color: #212529;
    --bs-highlight-bg: #fff3cd;
@@ -302,7 +303,7 @@ body {
 .btn-primary {
    --bs-btn-color: var(--bs-gray-100);
    --bs-btn-bg: var(--bs-primary);
-   --bs-btn-hover-bg: var(--blackAlpha900);
+   --bs-btn-hover-bg: var(--bs-black);
    --bs-btn-hover-color: var(--bs-gray-100);
    --bs-btn-active-bg: var(--bs-primary);
 }
@@ -325,11 +326,6 @@ body {
    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
    cursor: pointer;
    min-height: var(--bs-card-height);
-}
-
-.card:hover .add_to_cart {
-   display: block;
-   height: 2.563rem;
 }
 
 .card-title {
@@ -374,7 +370,82 @@ body {
    margin-bottom: 0;
 }
 
+.wished_icon {
+   top: 0.75rem;
+   right: 0.75rem;
+}
 
+.wished_icon .icons,
+.wished_icon button {
+   width: 2.125rem;
+   height: 2.125rem;
+   background: var(--bs-white);
+   transition: all linear .3s;
+   border-radius: 50%;
+}
+
+.wished_icon .icons i,
+.wished_icon button i {
+   font-size: 1.125rem;
+   color: var(--blackAlpha900);
+   transition: all linear .3s;
+}
+
+.wished_icon .icons:hover,
+.wished_icon button:hover {
+   background: var(--bs-primary);
+}
+
+.wished_icon .icons:hover,
+.wished_icon button:hover svg,
+.wished_icon .icons:hover,
+.wished_icon button:hover i {
+   color: var(--bs-gray-100);
+   fill: var(--bs-gray-100);
+}
+
+.add_to_cart {
+   display: none;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: var(--bs-black);
+   height: 0;
+   overflow: hidden;
+   text-decoration: none;
+   color: var(--bs-gray-100);
+   font-size: var(--heading-primary);
+   transition: all linear .3s;
+}
+.card:hover .add_to_cart {
+   display: block;
+   height: 2.563rem;
+}
+
+.price_details span {
+   font-size: var(--heading-primary);
+   line-height: var(--line-height-secondary);
+}
+
+.price_details span:first-child {
+   color: var(--bs-primary);
+}
+
+.price_details span:last-child {
+   color: var(--blackAlpha500);
+   text-decoration: line-through;
+}
+
+.review i {
+   color: #FFAD33;
+   font-size: var(--font-size-14);
+}
+
+.review span {
+   color: var(--blackAlpha500);
+   font-size: var(--font-size-14);
+   line-height: var(--line-height-base);
+}
 /*common header section  */
 
 /* header part start */
@@ -432,6 +503,9 @@ header .navbar-nav {
    --bs-nav-link-hover-color: rgba(var(--bs-body-color), 0.5);
    gap: clamp(1.5rem, 1.0714rem + 2.1429vw, 3rem);
 }
+.nav-link {
+   --bs-nav-link-font-size:1rem;
+}
 
 .navigation_bar {
    background: var(--bs-gray-100);
@@ -439,6 +513,7 @@ header .navbar-nav {
 
 .navigation_bar .navbar-brand {
    letter-spacing: 0.03em;
+   font-family: var(--inter-font-family);
 }
 
 .navigation_bar .navbar-nav li a {
@@ -469,14 +544,22 @@ header .navbar-nav {
 .navigation_bar .navbar-nav li a.active::before {
    width: calc(100% - var(--navbar-link-padding-bottom));
 }
+.nav_form{
+   width: 100%;   
+   max-width: 243px;
+   padding-block: 0.438rem;
+   padding-inline: 1.25rem 0.75rem;
+   background: var(--bs-secondary);
+   border-radius: 0.25rem;
+}
+.nav_form .form-control{
+   padding: 0;
+   background-color: transparent;
+}
 
 
 .navigation_bar .form-control {
-   max-width: 243px;
-   width: 100%;
-   padding: var(--space-7) var(--space-46) var(--space-7) var(--space-20);
    border: none;
-   background: var(--bs-secondary);
 }
 
 .navigation_bar .form-control:focus {
@@ -484,18 +567,16 @@ header .navbar-nav {
 }
 
 .navigation_bar .form-control[placeholder] {
-   font-weight: 400;
-   font-size: var(--font-size-12);
+   line-height: 1.125rem;
+   font-size: 0.75rem;
    color: var(--blackAlpha500);
 }
 
 .navigation_bar .search_btn {
-   width: 24px;
-   height: 24px;
-   top: 50%;
-   bottom: 50%;
-   transform: translateY(-50%);
-   right: var(--space-12);
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0.25rem;
 }
 
 .navigation_bar .search_btn .search-icon {
@@ -512,9 +593,9 @@ header .navbar-nav {
    height: var(--size-32);
 }
 
-.navigation_bar .shoping a,
+.navigation_bar .shoping a i,
 .navigation_bar .shoping button i {
-   font-size: var(--font-size-24);
+   font-size: 1.5rem;
 }
 
 .navigation_bar .wished_btn::before {
@@ -553,27 +634,32 @@ header .navbar-nav {
 :not(.btn-check)+.btn:active i {
    color: var(--bs-gray-100);
 }
-
 .navigation_bar .dropdown-menu {
+   --bs-dropdown-font-size: 0.875rem;
    --bs-dropdown-min-width: 14.063rem;
    max-width: 225px;
-   padding: 18px 12px 10px 20px;
+   padding: 1.125rem 0.75rem 0.625rem 1.25rem;
    position: absolute;
-   right: 0;
-   top: 36px;
    background: rgba(0, 0, 0, 0.04);
    backdrop-filter: blur(150px);
 }
-
-.navigation_bar .dropdown-menu span {
-   font-size: var(--font-size-14);
-   line-height: var(--line-height-base);
-   color: var(--bs-gray-100);
+.navigation_bar .dropdown-menu a{
+   width: 100%;
+}
+.navigation_bar .dropdown-menu svg{
+   width: 1.5rem;
+   height: 1.5rem;
 }
 
 .navigation_bar .dropdown-menu li {
    margin-bottom: 13px;
 }
+
+.navigation_bar .dropdown-menu span {
+   line-height: 1.313rem;
+   color: var(--bs-gray-100);
+}
+
 
 .navigation_bar .dropdown-menu li:last-child {
    margin-bottom: 0;
