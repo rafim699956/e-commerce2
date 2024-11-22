@@ -1,4 +1,3 @@
-
 /* section common title start */
 
 .common {
@@ -64,7 +63,7 @@
 }
 
 .product_right button:hover {
-    background: var(--blackAlpha900);
+    background: var(--bs-primary);
 }
 
 .product_right button i {
@@ -149,7 +148,7 @@
 
 .hero_section li a:hover,
 .hero_section li a:focus {
-    --bs-nav-link-hover-color:var(--bs-primary);
+    --bs-nav-link-hover-color: var(--bs-primary);
 }
 
 .hero_section li a::after {
@@ -178,21 +177,25 @@
     width: calc(100% - var(--aside-width));
 }
 
-.main_content .carousel-body{
+.main_content .carousel-body {
     padding-block: 1rem 0.625rem;
     padding-inline: 0.625rem;
 }
-.carousel-brand{
+
+.carousel-brand {
     margin-bottom: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
 }
-.carousel-brand .carousel-brand-logo{
+
+.carousel-brand .carousel-brand-logo {
     width: 2.5rem;
     height: 3.125rem;
 }
-.carousel-brand .carousel-brand-logo i{
+
+.carousel-brand .carousel-brand-logo i {
     font-size: 3.125rem;
 }
-.carousel-brand .carousel-brand-item-name{
+
+.carousel-brand .carousel-brand-item-name {
     color: var(--bs-secondary);
 }
 
@@ -201,12 +204,15 @@
     padding-left: clamp(1.25rem, 0.6429rem + 3.0357vw, 3.375rem);
     padding-bottom: clamp(1.25rem, 0.9464rem + 1.5179vw, 2.3125rem);
 }
-.carousel_content h1{
+
+.carousel_content h1 {
     margin-bottom: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
 }
+
 .main_content .carousel_content a {
     color: var(--bs-secondary);
 }
+
 .main_content .carousel_content a span {
     margin-right: 0.625rem;
 }
@@ -387,16 +393,18 @@
 
 /* category part end */
 /* explore part start */
-.select-color .select-color-item{
+.select-color .select-color-item {
     width: 1.25rem;
     height: 1.25rem;
 }
+
 .select-color-item input,
-.select-color-item .output-color{
+.select-color-item .output-color {
     width: 100%;
     height: 100%;
 }
-.select-color-item .output-color{
+
+.select-color-item .output-color {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -404,15 +412,18 @@
     background-color: var(--bs-primary);
     z-index: 99;
     pointer-events: none;
-} 
-.select-color-item input{
+}
+
+.select-color-item input {
     border: none;
 }
-.select-color-item input:checked + .output-color{
+
+.select-color-item input:checked+.output-color {
     border: 2px solid var(--bs-black);
     background-color: var(--bs-white);
 }
-.select-color-item input:checked + .output-color::before{
+
+.select-color-item input:checked+.output-color::before {
     content: "";
     position: absolute;
     background-color: var(--bs-primary);
@@ -528,21 +539,40 @@
 /* delivery part start */
 .delivery_item .delivery_img {
     padding: 9px;
-    background: var(--blackAlpha900);
+    background: rgba(47, 46, 48, 0.3);
     border-radius: 50%;
-    border: 1.375rem solid #c1c0c1;
+    width: 5rem;
+    height: 5rem;
 }
 
-.delivery_item .delivery_content h5 {
-    font-size: 20px;
-    line-height: 28px;
-    color: var(--blackAlpha900);
+.delivery_img .delivery-img-body {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 3.625rem;
+    height: 3.625rem;
+    background-color: var(--bs-black);
+    border-radius: 50%;
+}
+
+.delivery_img .delivery-img-body img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.delivery .delivery_item {
+    gap: 1.5rem;
+}
+
+.delivery_item .delivery_content h4,
+.delivery_item .delivery_content p {
+    font-family: var(--bs-body-font-family);
 }
 
 .delivery_item .delivery_content p {
-    font-size: var(--font-size-14);
-    line-height: var(--line-height-base);
-    color: var(--blackAlpha900);
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    margin-bottom: 0;
 }
 
 /* delivery part end */
@@ -625,118 +655,7 @@
 
 /* sign up page style end*/
 /* cart page style style*/
-.cart_section {
-    padding: 5rem 0 8.75rem;
-}
 
-.cart {
-    gap: 0.75rem;
-    font-size: var(--font-size-14);
-    line-height: var(--line-height-base);
-    color: var(--blackAlpha500);
-}
-
-.cart p {
-    color: var(--blackAlpha900);
-}
-
-.cart_wrapper {
-    padding-top: 5rem;
-}
-
-.cart_items_row {
-    grid-template-columns: 1fr 1fr 1fr 0.1fr;
-    padding: 1.5rem 2.5rem;
-    gap: 2rem;
-    background: var(--bs-gray-100);
-    filter: drop-shadow(0px 1px 13px rgba(0, 0, 0, 0.05));
-    margin-bottom: 2.5rem;
-}
-
-.cart_items_row:last-child {
-    margin-bottom: 1.5rem;
-}
-
-.cart_items_row h5,
-.cart_items_row span {
-    font-size: var(--heading-primary);
-    line-height: var(--line-height-secondary);
-    font-weight: 400;
-    color: var(--blackAlpha900);
-    white-space: nowrap;
-}
-
-.cart_items_row img {
-    width: clamp(3rem, 3.375rem, 20rem);
-    aspect-ratio: 1;
-}
-
-.cart_items_row:not(:first-child) {
-    padding-right: 4.125rem;
-}
-
-.cart_btn a {
-    border-color: var(--blackAlpha500);
-    color: var(--blackAlpha900);
-}
-
-.cart_btn a:hover {
-    border-color: var(--blackAlpha500);
-}
-
-.total_cost {
-    margin-top: 5rem;
-}
-
-.total_cost .coupon input:not(:last-child) {
-    border: 1px solid var(--blackAlpha900);
-    max-width: 18.75rem;
-    width: 100%;
-}
-
-.total_cost .coupon input[placeholder] {
-    font-weight: 400;
-    font-size: var(--heading-primary);
-    line-height: var(--line-height-secondary);
-    color: var(--blackAlpha500);
-}
-
-.total_cost .total_amount {
-    width: min(100vw, 29.375rem);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border: 1.5px solid var(--blackAlpha900);
-}
-
-.total_cost .total_amount h3 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-
-.total_cost .total_amount h5,
-.total_cost .total_amount span {
-    font-size: var(--heading-primary);
-    line-height: var(--line-height-secondary);
-}
-
-.cart_items_product {
-    gap: 1.25rem;
-}
-
-.numbar_of_item {
-    width: 4.5rem;
-}
-
-.numbar_of_item input {
-    padding: 0.375rem 0.75rem;
-    border: 1.5px solid rgba(0, 0, 0, 0.4);
-    box-shadow: none;
-}
-
-.cart_items {
-    padding: 1.813rem 4.125rem 1.813rem 2.5rem;
-    gap: 17.563rem;
-}
 
 /* cart page style end*/
 /* wishlist page style */
@@ -747,9 +666,10 @@
 /* footer part end */
 /* responsive css start */
 @media only screen and (max-width: 991px) {
-    header .navbar{
+    header .navbar {
         --bs-navbar-padding-y: 2.188rem;
     }
+
     header .header .select_box {
         position: relative;
     }
@@ -806,7 +726,7 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-       .navbar .navbar-nav {
+    .navbar .navbar-nav {
         height: 100vh;
     }
 

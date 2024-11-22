@@ -1,0 +1,113 @@
+.cart_section {
+   padding-bottom: var(--spacing-140);
+}
+
+.cart_wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
+.cart {
+   gap: 0.75rem;
+   font-size: var(--font-size-14);
+   line-height: var(--line-height-base);
+   color: var(--blackAlpha500);
+}
+
+.cart p {
+   color: var(--blackAlpha900);
+}
+
+.cart_items_row {
+   grid-template-columns: 1fr 1fr 1fr 0.1fr;
+   padding: 1.5rem var(--spacing-40);
+   gap: 2rem;
+   background: var(--bs-white);
+   filter: drop-shadow(0px 1px 13px rgba(0, 0, 0, 0.05));
+   margin-bottom: var(--spacing-40);
+}
+
+.cart_items_row:last-child {
+   margin-bottom: clamp(1.25rem, 1.1786rem + 0.3571vw, 1.5rem);
+}
+
+.cart_items_row p {
+   margin-bottom: 0;
+}
+
+.cart_items_product p {
+   font-weight: 500;
+}
+
+
+.cart_items_row img {
+   width: clamp(3rem, 3.375rem, 20rem);
+   aspect-ratio: 1;
+}
+
+.cart_items_row:not(:first-child) {
+   padding-right: 4.125rem;
+}
+
+.cart_btn a {
+   border-color: var(--blackAlpha500);
+   color: var(--blackAlpha900);
+}
+
+.cart_btn a:hover {
+   border-color: var(--blackAlpha500);
+}
+
+.total_cost {
+   margin-top: var(--spacing-80);
+}
+
+.total_cost .coupon input:not(:last-child) {
+   border: 1px solid var(--blackAlpha900);
+   max-width: 18.75rem;
+   width: 100%;
+}
+
+.total_cost .coupon input[placeholder] {
+   font-weight: 400;
+   font-size: var(--heading-primary);
+   line-height: var(--line-height-secondary);
+   color: var(--blackAlpha500);
+}
+
+.total_cost .total_amount {
+   width: min(100vw, 29.375rem);
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   border: 1.5px solid var(--blackAlpha900);
+}
+
+.total_cost .total_amount h3 {
+   font-size: 1.25rem;
+   line-height: 1.75rem;
+}
+
+.total_cost .total_amount h5,
+.total_cost .total_amount span {
+   font-size: var(--heading-primary);
+   line-height: var(--line-height-secondary);
+}
+
+.cart_items_product {
+   gap: 1.25rem;
+}
+
+.numbar_of_item {
+   width: 4.5rem;
+}
+
+.numbar_of_item input {
+   padding: 0.375rem 0.75rem;
+   border: 1.5px solid rgba(0, 0, 0, 0.4);
+   box-shadow: none;
+}
+
+.cart_items {
+   padding: 1.813rem 4.125rem 1.813rem 2.5rem;
+   gap: 17.563rem;
+}

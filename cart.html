@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
 
 </head>
 
@@ -152,41 +152,49 @@
         </div>
     </header>
     <!-- header part end -->
+    <!-- breadcrumb section start -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active"><a href="#">cart</a></li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- breadcrumb section end -->
     <!-- cart part start -->
     <section class="cart_section">
         <div class="container">
-            <div class="cart fw-normal d-flex align-items-center">
-                <span>Home</span> <span>/</span>
-                <p>Cart</p>
-            </div>
             <div class="cart_wrapper">
                 <div class="cart_items_row header w-100 rounded-1 d-grid align-items-center">
-                    <h5>Product</h5>
-                    <h5>Price</h5>
-                    <h5>Quantity</h5>
-                    <h5>Subtotal</h5>
+                    <p>Product</p>
+                    <p>Price</p>
+                    <p>Quantity</p>
+                    <p>Subtotal</p>
                 </div>
                 <div class="cart_items_row w-100 rounded-1 d-grid align-items-center">
                     <div class="cart_items_product d-inline-flex align-items-center">
                         <div><img src="./images/Monitor-Cart-Small-2x.png" alt=""></div>
-                        <h5 class="text-start">LCD Monitor</h5>
+                        <p class="text-start">LCD Monitor</p>
                     </div>
-                    <span>$650</span>
+                    <p>$650</p>
                     <div class="numbar_of_item">
                         <input class="mw-100 rounded-1" type="number" value="1">
                     </div>
-                    <span>$650</span>
+                    <p>$650</p>
                 </div>
                 <div class="cart_items_row w-100 rounded-1 d-grid align-items-center">
                     <div class="cart_items_product d-inline-flex align-items-center">
                         <div><img src="./images/Gamepad-Cart-Small-2x.png" alt=""></div>
-                        <h5 class="text-start">H1 Gamepad</h5>
+                        <p class="text-start">H1 Gamepad</p>
                     </div>
-                    <span>$550</span>
+                    <p>$550</p>
                     <div class="numbar_of_item">
                         <input class="mw-100 rounded-1" type="number" value="2">
                     </div>
-                    <span>$1100</span>
+                    <p>$1100</p>
                 </div>
                 <div class="cart_btn d-inline-flex flex-wrap gap-3 w-100 align-items-center justify-content-between">
                     <a class="btn py-3 px-5 fw-medium" href="#">Return To Shop</a>
@@ -203,15 +211,15 @@
                 <div class="total_amount px-4 rounded-1">
                     <h3 class="mb-4 fw-medium">Cart Total</h3>
                     <div class="total_amount_item mb-3 d-flex gap-2 align-items-center justify-content-between">
-                        <h5 class="fw-normal">Subtotal:</h5><span class="fw-normal">$1750</span>
+                        <p class="fw-normal">Subtotal:</p><span class="fw-normal">$1750</span>
                     </div>
                     <hr class="m-0 mb-3">
                     <div class="total_amount_item mb-3 d-flex gap-2 align-items-center justify-content-between">
-                        <h5 class="fw-normal">Shipping:</h5><span class="fw-normal">Free</span>
+                        <p class="fw-normal">Shipping:</p><span class="fw-normal">Free</span>
                     </div>
                     <hr class="m-0 mb-3">
                     <div class="total_amount_item mb-3 d-flex gap-2 align-items-center justify-content-between">
-                        <h5 class="fw-normal">Total:</h5><span class="fw-normal">$1750</span>
+                        <p class="fw-normal">Total:</p><span class="fw-normal">$1750</span>
                     </div>
                     <div class="text-center">
                         <a class="btn btn-primary" href="checkout.html">Procees to checkout</a>
