@@ -1,5 +1,5 @@
-.account_heading {
-    margin-bottom: 5rem;
+.hero_section {
+    padding-bottom: var(--spacing-140);
 }
 
 .box-shadow {
@@ -8,34 +8,34 @@
 
 .contact_info {
     padding: 2.5rem 2.188rem 3.125rem;
+    gap: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
 }
 
-.contact_number {
-    h5 {
-        font-size: var(--font-size-16);
-        line-height: var(--line-height-24);
-    }
+.contact_info .address {
+    gap: 1.5rem;
 }
+
+.address span,
+.address a {
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+}
+
+.hero_section .row.g-4 {
+    --bs-gutter-y: 1.875rem;
+    --bs-gutter-x: 1.875rem;
+}
+
 
 .phone_icon {
     width: 2.5rem;
     aspect-ratio: 1/1;
-    background: var(--red);
-    color: var(--bs-gray-100Alpha900);
-
-    i {
-        font-size: 1.25rem;
-    }
+    background: var(--bs-primary);
+    color: var(--bs-white);
 }
 
-.address {
-
-    p,
-    a {
-        font-size: var(--font-size-14);
-        line-height: var(--line-height-21);
-        color: var(--blackAlpha900);
-    }
+.phone_icon i {
+    font-size: 1.25rem;
 }
 
 .contact_form {

@@ -4,29 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product | e-commerce</title>
+    <title>404 | e-commerce</title>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/product.css">
-    <style>
-        .not_found {
-            h1 {
-                font-size: min(110px, 25vw);
-                line-height: 7.188rem;
-                letter-spacing: .03em;
-                margin-bottom: 40px;
-            }
-
-            p {
-                font-size: 1rem;
-                line-height: 1.5rem;
-                margin-bottom: 80px;
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="./css/404.css">
 </head>
 
 <body>
@@ -169,24 +151,26 @@
         </div>
     </header>
     <!-- header part end -->
-
+    <!-- breadcrumb start -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav class="d-flex gap-3 flex-column flex-sm-row justify-content-between" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">home</a></li>
+                    <li class="breadcrumb-item active"><a href="#">404 error</a></li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- breadcrumb end -->
     <!-- hero part start -->
     <section class="hero_section">
         <div class="container">
-            <div class="account_heading d-flex align-items-center justify-content-between">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="#">Account</a></li>
-                        <li class="breadcrumb-item"><a href="#">Gaming</a></li>
-                        <li class="breadcrumb-item active"><a href="#">Havic HV G-92 Gamepad</a></li>
-                    </ol>
-                </nav>
-            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="not_found text-center">
                         <h1 class="fw-medium">404 Not Found</h1>
-                        <p class="fw-normal">Your visited page not found. You may go home page.</p>
+                        <p class="">Your visited page not found. You may go home page.</p>
                         <a class="btn btn-primary" href="index.html">Back to home page</a>
                     </div>
                 </div>

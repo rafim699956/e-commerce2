@@ -1,56 +1,106 @@
-.billing_wrapper {
-    grid-column-gap: 10.813rem;
-    grid-column-gap: min(10.813rem, 15vw);
-    grid-row-gap: 4rem;
+.mb-32 {
+    margin-bottom: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
 }
-.billing_heading{
+
+.billing_wrapper {
+    row-gap: 2rem;
+}
+
+.billing_heading {
     margin-bottom: clamp(1.25rem, 0.75rem + 2.5vw, 3rem);
 }
-.billing_heading h1{
+
+.billing_heading h1 {
     color: var(--bs-black);
     line-height: 1.875rem;
 }
 
-.form_item {
-    width: min(29.375rem, 100vw);
-}
-
 .billing_details {
-    padding-bottom: min(8.75rem, 20vw);
+    padding-bottom: var(--spacing-140);
 }
 
-.purches_product {
-    max-width: 26.375rem;
+.purches_product .product_item img {
+    width: 3.375rem;
+    aspect-ratio: 1 / 1;
+}
 
-    .product_item {
-        img {
-            width: 3.375rem !important;
-            aspect-ratio: 1 / 1;
-        }
+.form_item label {
+    color: rgba(0, 0, 0, 0.4);
+}
 
-        h4,
-        span,
-        +span {
-            font-size: 1rem;
-            line-height: 1.5rem;
-        }
+.billing-form {
+    gap: clamp(1rem, 0.7143rem + 1.4286vw, 2rem);
+}
+
+/* .billing-form .form-control {
+    height: 3.125rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: var(--bs-secondary);
+} */
+
+.form_item .form-check-input:checked[type=checkbox] {
+    --bs-form-check-bg-image: url("../images/Vector.png");
+}
+
+.form_item .form-check-input:checked {
+    background-color: var(--bs-primary);
+    border: none;
+}
+
+.form_item input[type=checkbox] {
+    padding: 0.438rem 0.313rem;
+}
+
+.form_item .form-check-input {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 14px 10px;
+}
+
+.form_item .form-check-input:focus {
+    box-shadow: none;
+}
+
+.form_item .form-check .form-check-label {
+    color: var(--bs-black);
+}
+
+/* .form_item .form-control:focus {
+    box-shadow: 0 0 0 .25rem rgb(219, 68, 68);
+} */
+
+.form-check-input:checked[type=radio] {
+    --bs-form-check-bg-image: url("../images/Ellipse.png");
+}
+
+.form-check-input:checked {
+    background-color: var(--bs-white);
+    border-color: var(--bs-black);
+}
+
+.payment_method .form-check-input {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 14px;
+    border: 1.5px solid var(--bs-black);
+}
+
+.payment_method .form-check-input:focus {
+    box-shadow: none;
+}
+
+.payment_method a {
+    width: 2.625rem;
+    height: 1.75rem;
+}
+
+@media (min-width: 992px) {
+    .form_item {
+        width: 29.375rem;
     }
-}
 
-.payment_option {
-    img {
-        width: 2.375rem !important;
-    }
-}
-
-.checkout_product {
-    width: min(32.938rem, 100vw);
-}
-
-.coupon {
-    input {
-        width: min(18.75rem, 100vw);
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+    .checkout_product {
+        width: 26.688rem;
     }
 }

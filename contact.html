@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
 </head>
 
@@ -152,45 +151,56 @@
         </div>
     </header>
     <!-- header part end -->
+    <!-- breadcrumb start -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav class="d-flex gap-3 flex-column flex-sm-row justify-content-between" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="account.html">home</a></li>
+                    <li class="breadcrumb-item active"><a href="#">contact</a></li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- breadcrumb end -->
 
     <!-- hero part start -->
     <section class="hero_section">
         <div class="container">
-            <div class="account_heading d-flex align-items-center justify-content-between">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active"><a href="#">My Account</a></li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="contact_info d-flex flex-column box-shadow rounded-1">
-                        <div class="contact_number mb-3 d-flex align-items-center gap-3">
-                            <a class="phone_icon rounded-circle d-inline-flex align-items-center justify-content-center"
-                                href="#">
-                                <i class="fas fa-phone-alt"></i>
-                            </a>
-                            <h5 class="fw-medium">Call To Us</h5>
+                        <div class="address address-1 d-inline-flex flex-column">
+                            <div class="contact_number d-flex align-items-center gap-3">
+                                <a class="phone_icon rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    href="#">
+                                    <i class="fas fa-phone-alt"></i>
+                                </a>
+                                <p class="mb-0">Call To Us</p>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <span class="">We are available 24/7, 7 days a week.</span>
+                                <a href="tel:+8801611112222">Phone: +8801611112222</a>
+                            </div>
                         </div>
-                        <div class="address mt-2 mb-3">
-                            <p class="mb-3 fw-normal">We are available 24/7, 7 days a week.</p>
-                            <a href="tel:+8801611112222">Phone: +8801611112222</a>
+                        <hr class="m-0">
+                        <div class="address address-2 d-inline-flex flex-column">
+                            <div class="contact_number d-flex align-items-center gap-3">
+                                <a class="phone_icon rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <p class="mb-0">Write To US</p>
+                            </div>
+                            <div class="d-inline-flex flex-column gap-3">
+                                <span class="">Fill out our form and we will contact you within 24 hours.</span>
+                                <a class="" href="mailto:customer@exclusive.com">Emails: customer@exclusive.com</a>
+                                <a href="mailto:support@exclusive.com">Emails: support@exclusive.com</a>
+                            </div>
                         </div>
-                        <hr class="m-0 my-3">
-                        <div class="contact_number mb-3 d-flex align-items-center gap-3">
-                            <a class="phone_icon rounded-circle d-inline-flex align-items-center justify-content-center"
-                                href="#">
-                                <i class="far fa-envelope"></i>
-                            </a>
-                            <h5 class="fw-medium">Write To US</h5>
-                        </div>
-                        <div class="address d-inline-flex flex-column mt-2 mb-3">
-                            <p class="mb-3 fw-normal">Fill out our form and we will contact you within 24 hours.</p>
-                            <a class="mb-3" href="mailto:customer@exclusive.com">Emails: customer@exclusive.com</a>
-                            <a href="mailto:support@exclusive.com">Emails: support@exclusive.com</a>
-                        </div>
+
+
+
                     </div>
                 </div>
                 <div class="col-lg-8">

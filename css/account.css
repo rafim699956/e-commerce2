@@ -1,83 +1,74 @@
-.hero_section {
-    padding-top: 5rem;
-}
-
-.breadcrumb li a {
-    color: rgba(0, 0, 0, 0.5);
+.breadcrumb-section p{
     font-size: 0.875rem;
     line-height: 1.313rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
 }
-
-.breadcrumb li.active a {
-    color: #000;
+.breadcrumb-section p span{
+    color: #DB4444;
 }
-
 .account_heading {
     margin-bottom: 5rem;
 }
 
-.account_heading h5 {
-    font-size: 0.875rem;
-    line-height: 1.313rem;
-    color: #000;
+.hero_section{
+    padding-bottom: var(--spacing-140);
+}
 
-    span {
-        color: #DB4444;
-    }
+.account_wrapper{
+    padding-block:var(--spacing-40);
+    padding-inline: var(--spacing-80);
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+}
+.wrapper:has(aside){
+    gap: 5rem;
+}
+
+.hero_section aside {
+    --aside-width:12.5rem;
+}
+aside .nav-link {
+    --bs-nav-link-font-weight:400;
+    --bs-nav-link-color:var(--bs-black);
+}
+aside .nav-link:focus, .nav-link:hover {
+    color: var(--bs-primary);
+}
+aside .dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+}
+aside .dropdown-item{
+    color: rgba(0, 0, 0, 0.5);
+}
+aside .dropdown-item:hover{
+    color: var(--bs-primary);
+}
+
+aside .dropdown-toggle::after{
+    display: none;
+}
+aside .dropdown-menu{
+    margin-top: 1rem;
 }
 
 .dropdown-menu {
-    margin-left: 2.25rem !important;
-}
-
-aside .dropdown-menu li a {
-    color: rgba(0, 0, 0, 0.5) !important;
+    margin-left: 2.188rem !important;
 }
 
 aside .dropdown-menu li.active a {
     color: #DB4444 !important;
 }
 
-main .account_wrapper {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
-    padding: 2.5rem 5rem;
-    padding-top: clamp(1rem, 5vw, 2.5rem);
-    padding-bottom: clamp(1rem, 5vw, 2.5rem);
-    padding-left: clamp(2rem, 5vw, 5rem);
-    padding-right: clamp(2rem, 5vw, 5rem);
-    max-width: 58.563rem;
-}
-
 .account_header h6 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
     color: #DB4444;
 }
-
-.account_form form input {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    border: none;
-    background: rgba(245, 245, 245, 1);
-}
-
-.account_form form input::placeholder {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.form-control:focus {
-    color: rgba(0, 0, 0, 0.5);
-    background: rgba(245, 245, 245, 1);
-    border-color: transparent;
-    box-shadow: 0 0 0 .25rem rgb(39, 200, 213);
-}
-
 .account_btn button:first-child {
     background: transparent;
     color: #000;
     padding: .5rem;
+}
+@media screen and (min-width:992px){
+    .hero_section .account_wrapper{
+        max-width: 54.375rem;
+    }
 }

@@ -1,0 +1,19 @@
+.breadcrumb-section {
+   padding-bottom: var(--spacing-140);
+}
+
+.not_found {
+   padding-bottom: var(--spacing-140);
+}
+
+.not_found h1 {
+   font-size: clamp(2.5rem, 1.25rem + 6.25vw, 6.875rem);
+   color: var(--bs-black);
+   line-height: clamp(2.5rem, 1.1607rem + 6.6964vw, 7.1875rem);
+   letter-spacing: .03em;
+   margin-bottom: clamp(1.25rem, 0.8929rem + 1.7857vw, 2.5rem);
+}
+
+.not_found p {
+   margin-bottom: clamp(2.5rem, 1.7857rem + 3.5714vw, 5rem);
+}

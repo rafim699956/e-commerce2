@@ -1,0 +1,79 @@
+
+.sign_up {
+   --section-top-padding: var(--spacing-60);
+   --section-bottom-padding: clamp(4.375rem, 9.375rem, 8.75rem);
+   padding-top: var(--section-top-padding);
+   padding-bottom: var(--section-bottom-padding);
+   height: 81.563rem;
+   display: flex;
+   align-items: center;
+}
+
+
+.sign_up .account h1 {
+   line-height: 1.875rem;
+}
+
+.form-control {
+   background-color: transparent;
+}
+
+.sign_up .account form>div {
+   margin-bottom: 40px;
+}
+
+.sign_up .account form>div input::placeholder {
+   font-size: var(--heading-primary);
+   font-weight: 400;
+   line-height: var(--line-height-secondary);
+   color: rgba(0, 0, 0, 0.4);
+}
+
+.sign_up .account form>div input:focus {
+   border: none;
+   box-shadow: none;
+}
+
+.sign_up .account form .forget_btn {
+   font-size: var(--heading-primary);
+   line-height: var(--line-height-secondary);
+   color: var(--bs-primary);
+}
+
+.sign_up .account a {
+   text-decoration: none;
+   margin-bottom: 2rem;
+}
+
+.sign_up .account a span {
+   font-size: var(--heading-primary);
+   line-height: var(--line-height-secondary);
+   color: var(--blackAlpha900);
+}
+
+.sign_up .account .log_in span {
+   font-size: var(--heading-primary);
+   line-height: var(--line-height-secondary);
+   color: rgba(0, 0, 0, 0.7);
+}
+
+.sign_up .account .log_in a {
+   font-size: var(--heading-primary);
+   line-height: var(--line-height-secondary);
+   color: rgba(0, 0, 0, 0.7);
+   margin-bottom: 0;
+}
+
+/* sign up page style end*/
+@media screen and (min-width:992px) {
+   .sign_up::before, .log_in::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: var(--spacing-60);
+      bottom: var(--spacing-140);
+      background:url(../images/SideImage.jpg) no-repeat center/cover;
+      width: 41.92vw;
+      z-index: -1;
+   }
+}
