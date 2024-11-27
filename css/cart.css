@@ -70,8 +70,8 @@
 
 .total_cost .coupon input[placeholder] {
    font-weight: 400;
-   font-size: var(--heading-primary);
-   line-height: var(--line-height-secondary);
+   font-size: var(--bs-body-font-size);;
+   line-height: 1.5rem;
    color: var(--blackAlpha500);
 }
 
@@ -89,8 +89,8 @@
 
 .total_cost .total_amount h5,
 .total_cost .total_amount span {
-   font-size: var(--heading-primary);
-   line-height: var(--line-height-secondary);
+   font-size: var(--bs-body-font-size);;
+   line-height: 1.5rem;
 }
 
 .cart_items_product {

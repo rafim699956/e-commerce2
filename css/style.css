@@ -10,7 +10,7 @@
 
 .common .days span {
     color: var(--bs-primary);
-    font-size: var(--heading-primary);
+    font-size: var(--bs-body-font-size);;
 }
 
 .common .days span:first-child {
@@ -33,13 +33,13 @@
 }
 
 .counter .counter_item p {
-    font-size: var(--font-size-12);
+    font-size: 0.75rem;
     font-weight: 500;
 }
 
 .counter .counter_item span {
     font-weight: 700;
-    font-size: clamp(1.875rem, 1.8393rem + 0.1786vw, var(--font-size-32));
+    font-size: clamp(1.875rem, 1.8393rem + 0.1786vw, 2rem);
 }
 
 .counter .counter_item span::after {
@@ -70,7 +70,7 @@
 }
 
 .product_right button i {
-    font-size: var(--heading-primary);
+    font-size: var(--bs-body-font-size);;
     transition: all linear .3s;
 }
 
@@ -148,7 +148,7 @@
 }
 /* .main_content part start */
 .main_content {
-    padding-left: var(--space-45);
+    padding-left: 2.813rem;
     width: calc(100% - var(--aside-width));
 }
 
@@ -255,7 +255,7 @@
 /* category part start */
 .category_wrapper .category_item {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: var(--space-24);
+    padding: 1.5rem;
     cursor: pointer;
     transition: all linear .3s;
 }
@@ -265,7 +265,7 @@
 }
 
 .category_wrapper .category_item p {
-    font-size: var(--heading-primary);
+    font-size: var(--bs-body-font-size);;
     color: var(--blackAlpha900);
     transition: all linear .3s;
 }
@@ -328,7 +328,7 @@
 }
 
 .categori .counter_item span {
-    font-size: var(--heading-primary);
+    font-size: var(--bs-body-font-size);;
     line-height: 1.25rem;
 }
 
@@ -410,7 +410,7 @@
 .arrival_wrapper .arrival_content h4 {
     color: var(--bs-gray-100);
     font-size: clamp(1.25rem, 1.5357rem, var(--font-size-14));
-    line-height: var(--line-height-secondary);
+    line-height: 1.5rem;
     letter-spacing: 3px;
 }
 
@@ -422,8 +422,8 @@
 
 .arrival_wrapper .arrival_content a {
     display: inline !important;
-    font-size: var(--heading-primary);
-    line-height: var(--line-height-secondary);
+    font-size: var(--bs-body-font-size);;
+    line-height: 1.5rem;
     color: var(--bs-gray-100);
     text-decoration: none;
     transition: all linear 0.3s;
